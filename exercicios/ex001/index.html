@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="alien.ico.ico" type="image/x-icon">
+    <title>Paragrafos e favicon</title>
+    <style>
+        mark{ background-color: rgb(180, 101, 255);}
+    </style>
+
+</head>
+<body>
+    <h1> clique <a href="listaselinks.html" target="_self" rel="prev">aqui </a>para voltar a outra pagina</h1>
+    <h2> clique <a href="/exercicios/noticias/pagina3.html" rel="next">aqui para proxima pagina</a></h2>
+
+    <h2> paragrafos e quebras de linha</h2>
+    <hr>
+    <p> Você pode escrever 
+        um paragrafo de 
+        qualque jeito.
+        Basta colocar tudo
+        no meio do par de tags p e /p     
+    </p>
+    <p>tag br pra quebrar o texto em qlqr lugar</p>
+    <p> exemplo <br> aqui assim. </p>
+    <p> &lt;br&gt;  essa</p>   <!--LESS THAN / GREATER THAN--> 
+    <p> Vamos adicionar alguns simbolos especiais:
+ &reg;
+ &copy;
+    </p>
+    <p>*Um
+        <p>**Dois</p>
+        <p>***Três</p>
+        <p>****Quatro</p>
+        <br> 
+        <p>****Quatro</p>
+        <p>***Três</p>
+        <p>**Dois</p>
+        <p>*Um</p>
+
+<p> Agora vamos adicionar emoji: &#x1F438 &#x1F320</p> <!-- usar &#x antes do codigo do emoji-->
+<p> Imagens</p>
+<img src="fotos/logo-html.png" alt="Logo do html"> <!-- Na mesma pasta-->
+<br>
+
+<img src="fotos/logo-css.png" alt="Logo css"> <!--Em pasta diferente mas dentro do projeto, precisa por o nome da pasta/nomeda imagem-->
+ <p> também da pra pegar foto de site, precisa da url completa, tipo  </p>
+<img src="https://onepatch.com/wp-content/uploads/2020/03/JAVASCRIPT_CIRCLE_NEW.gif" alt="Logo de Java Script">
+ <!--copiar a url toda, nao esquecer de usar apenas fotos que n precisa pagar-->
+     <h1>Hierarquia de titulos exemplos : Titulo 1</h1> 
+
+     <p>Aqui estou testando o<b> negrito </b> e o <i>italico</i></p> <!-- nao semantico, fica só a palavra alterada-->
+     <p> <mark> vou por o marcador de texto</mark></p>
+<p><mark>aqui tambem</mark>  </p>
+<h2> Titulo 2</h2>
+<p> aqui vou criar um <small>texto pequeno </small> e um <big>texto grande</big></p> <!-- o big ta obsoleto, fazer no css-->
+<p>aqui vou testar o <strong>negrito</strong> e <em>italico</em> semanticos</p> <!-- strong negrito e italico EM-->
+<h2> Texto deletado</h2>
+<p> podemos marcar um <del> texto como excluido para indicar</del> q ele deve ser lido mas nao considerado.</p>
+<h2> texto inserido</h2>
+<p> Podemos marcar um <ins>texto como inserido para dar enfase e</ins>indicar que ele foi indicado depois.</p>
+<p> Existe tambem a tag u que significa sublinhado mas é não semantica  <u> assim</u></p>
+<h2> Texto subscrito</h2>
+<p> para inserir coisas do tipo H<SUB>2</SUB>O</p>
+<h2> Texto Sobrescrito</h2>
+<p> para inserir coisas do tipo x<SUP>20</SUP>+3</p> 
+<h2> Codigo-fonte - pré formatação</h2>
+<p> O comando <code> document.getElementById("teste") é escrito em linguagem JavaScript </code></p>
+ 
+<h2> Codigo Phyton</h2>
+<pre><code>
+num = int(input('digite um numero))
+if num %2 == 0:
+print(f'0 numero {num} é par')
+else:
+print (f'0 numero {num} é impar) print ('Fim do programa') </code></pre>
+
+<h2> Citações simples</h2>
+<p> Como diria Simone Beauvoir: <q>Ninguém nasce mulher: torna-se mulher.</q></p>
+<h2> Citações completas</h2>
+<p> Segundo Paulo Freire, no seu livro A importancia do ato de ler:</p>
+<blockquote cite="https://cpers.com.br/wp-content/uploads/2019/09/1.-A-Import%C3%A2ncia-do-Ato-de-Ler.pdf">
+Esta "leitura” mais crítica da "leitura” anterior menos crítica do mundo possibilitava aos
+grupos populares, às vezes em posição fatalista em face das injustiças, uma
+compreensão diferente de sua indigência.</blockquote> 
+<h2> Abreviações </h2>
+<p> Estou estudando<abbr title="HyperText Markup Language"> HTML </abbr>e <abbr title="cascading style sheets">CSS</abbr></p>
+<h2> Texto invertido</h2>
+<p><bdo dir="rtl"> Assim fica invertido </bdo> </p>
+</bdo>
+<h3> Titulo 3</h3>
+<h4>  Titulo 4</h4>
+<h5>  Titulo 5 </h5>
+<h6> Titulo 6</h6>
+
+<address> Rua Pedro Jose Senger, 275, Vila Haro</address> 
+</body>
+</html>
