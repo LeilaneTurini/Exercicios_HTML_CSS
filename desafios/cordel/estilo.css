@@ -7,17 +7,49 @@
     --fonte-destaque: 'Passion One', cursive;
 }
 
+
+
+
 * {
     margin: 0px;
     padding: 0px;
-
-
 }
 
+html body { background-color: darkgray;
+    min-height: 100vh;
+
+}
+header {
+    background-color: black;
+    text-align: center;
+    display: block;
+    padding-bottom: 20px;
+}
+
+header > h1 {
+    font-size: 10vw;
+    font-family: var(--fonte-destaque);
+    padding-top: 50px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-weight: bold;
+    font-variant: small-caps;
+    display: block;
+}
+header>p {
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    background-color: black;
+    font-family: Verdana;
+    padding: 20px;
+    margin-top: -20px;
+}
 a {
     text-decoration: none;
-    text-decoration: dashed;
-    font-family: var(--fonte-destaque);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
     color: white;
 }
 
@@ -25,29 +57,35 @@ a:hover {
     text-decoration: underline;
 }
 
-h1 {
-    font-size: 136px;
-    font-family: var(--fonte-destaque);
+
+section {
+    font-family: var(--fonte-conteudo);
+padding-left: 30px;   
+ display: block;
+    line-height: 2em;
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+    
+
+}
+section.normal {
+    background-color: white;
+    color: black;
+}
+section.fundo01 {
+
+    background-color:rgb(66, 62, 62) ;
     color: white;
-    background-color: black;
-    text-align: center;
 }
 
-header {
+
+
+
+footer{
     background-color: black;
-    min-height: 51px;
-    padding: 40px;
     text-align: center;
-
-}
-
-header p {
     font-size: 16px;
     color: white;
-    text-align: center;
-    background-color: black;
-    font-family: Verdana;
-    padding: 20px;
-    margin-top: 10px;
-
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px   ;
 }
