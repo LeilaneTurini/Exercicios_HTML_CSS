@@ -17,7 +17,13 @@
             width: 500px;
             border-collapse: collapse;
             margin-left: 25px;
+            position: relative;
         }
+        thead{  position: sticky;
+            background-color: rgba(143, 138, 138, 0.884);
+        top: -1px;}
+
+
 
         th,
         td {
@@ -33,8 +39,18 @@
             text-align: right;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgba(127, 255, 212, 0.397);
+                    }
         thead, tfoot {
-            background-color: rgba(184, 184, 184, 0.541);
+            background-color:rgba(143, 138, 138, 0.884);
+        }
+        tbody > tr:nth-child(2n ) 
+        {
+            background-color: lightgray;
         }
     </style>
 </head>
@@ -44,9 +60,10 @@
     <h1>Uso de tabelas grandes</h1>
 
     <table>
+        <caption> População dos Estados do Brasil</caption>
         <thead>
-            <th> Estado</th>
-            <th> População</th>
+            <th scope="col"> Estado</th>
+            <th scope="col" style="width:50px;"> População</th>
         </thead>
         <tbody>
             <tr>
@@ -183,7 +200,7 @@
 
         <tfoot>
             <tr>
-                <th> Total de Habitantes</th>
+                <th scope="row"> Total de Habitantes</th>
                 <td class="num"> <strong>213.317.639</strong></td>
             </tr>
 
@@ -194,16 +211,16 @@
 
 
 
+<p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, magni recusandae doloremque enim earum totam omnis adipisci nesciunt, labore, quam delectus! Officia, deleniti nostrum necessitatibus natus nam eaque possimus vero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quasi quam iure eveniet fugit asperiores ducimus consectetur unde ea possimus assumenda amet fugiat ipsa quo corporis numquam, neque in maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, minima aliquam? Iste, illum unde. Animi ab optio laborum qui voluptatum, porro eos, earum nostrum iure velit, dolores voluptatibus voluptatem facere. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem nulla libero consectetur asperiores corporis quidem consequatur, soluta ipsum sit ad, et maxime facere adipisci nisi dolorem deleniti iste veniam odit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum corrupti, accusamus in consequuntur quam nesciunt, sed vel porro beatae, exercitationem veniam error! Autem corrupti ab exercitationem porro dignissimos fugiat?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, magni recusandae doloremque enim earum totam omnis adipisci nesciunt, labore, quam delectus! Officia, deleniti nostrum necessitatibus natus nam eaque possimus vero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quasi quam iure eveniet fugit asperiores ducimus consectetur unde ea possimus assumenda amet fugiat ipsa quo corporis numquam, neque in maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, minima aliquam? Iste, illum unde. Animi ab optio laborum qui voluptatum, porro eos, earum nostrum iure velit, dolores voluptatibus voluptatem facere. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem nulla libero consectetur asperiores corporis quidem consequatur, soluta ipsum sit ad, et maxime facere adipisci nisi dolorem deleniti iste veniam odit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum corrupti, accusamus in consequuntur quam nesciunt, sed vel porro beatae, exercitationem veniam error! Autem corrupti ab exercitationem porro dignissimos fugiat?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, magni recusandae doloremque enim earum totam omnis adipisci nesciunt, labore, quam delectus! Officia, deleniti nostrum necessitatibus natus nam eaque possimus vero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quasi quam iure eveniet fugit asperiores ducimus consectetur unde ea possimus assumenda amet fugiat ipsa quo corporis numquam, neque in maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, minima aliquam? Iste, illum unde. Animi ab optio laborum qui voluptatum, porro eos, earum nostrum iure velit, dolores voluptatibus voluptatem facere. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem nulla libero consectetur asperiores corporis quidem consequatur, soluta ipsum sit ad, et maxime facere adipisci nisi dolorem deleniti iste veniam odit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum corrupti, accusamus in consequuntur quam nesciunt, sed vel porro beatae, exercitationem veniam error! Autem corrupti ab exercitationem porro dignissimos fugiat?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, magni recusandae doloremque enim earum totam omnis adipisci nesciunt, labore, quam delectus! Officia, deleniti nostrum necessitatibus natus nam eaque possimus vero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quasi quam iure eveniet fugit asperiores ducimus consectetur unde ea possimus assumenda amet fugiat ipsa quo corporis numquam, neque in maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, minima aliquam? Iste, illum unde. Animi ab optio laborum qui voluptatum, porro eos, earum nostrum iure velit, dolores voluptatibus voluptatem facere. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem nulla libero consectetur asperiores corporis quidem consequatur, soluta ipsum sit ad, et maxime facere adipisci nisi dolorem deleniti iste veniam odit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum corrupti, accusamus in consequuntur quam nesciunt, sed vel porro beatae, exercitationem veniam error! Autem corrupti ab exercitationem porro dignissimos fugiat?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, magni recusandae doloremque enim earum totam omnis adipisci nesciunt, labore, quam delectus! Officia, deleniti nostrum necessitatibus natus nam eaque possimus vero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quasi quam iure eveniet fugit asperiores ducimus consectetur unde ea possimus assumenda amet fugiat ipsa quo corporis numquam, neque in maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, minima aliquam? Iste, illum unde. Animi ab optio laborum qui voluptatum, porro eos, earum nostrum iure velit, dolores voluptatibus voluptatem facere. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem nulla libero consectetur asperiores corporis quidem consequatur, soluta ipsum sit ad, et maxime facere adipisci nisi dolorem deleniti iste veniam odit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum corrupti, accusamus in consequuntur quam nesciunt, sed vel porro beatae, exercitationem veniam error! Autem corrupti ab exercitationem porro dignissimos fugiat?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, magni recusandae doloremque enim earum totam omnis adipisci nesciunt, labore, quam delectus! Officia, deleniti nostrum necessitatibus natus nam eaque possimus vero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quasi quam iure eveniet fugit asperiores ducimus consectetur unde ea possimus assumenda amet fugiat ipsa quo corporis numquam, neque in maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, minima aliquam? Iste, illum unde. Animi ab optio laborum qui voluptatum, porro eos, earum nostrum iure velit, dolores voluptatibus voluptatem facere. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem nulla libero consectetur asperiores corporis quidem consequatur, soluta ipsum sit ad, et maxime facere adipisci nisi dolorem deleniti iste veniam odit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum corrupti, accusamus in consequuntur quam nesciunt, sed vel porro beatae, exercitationem veniam error! Autem corrupti ab exercitationem porro dignissimos fugiat?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, magni recusandae doloremque enim earum totam omnis adipisci nesciunt, labore, quam delectus! Officia, deleniti nostrum necessitatibus natus nam eaque possimus vero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quasi quam iure eveniet fugit asperiores ducimus consectetur unde ea possimus assumenda amet fugiat ipsa quo corporis numquam, neque in maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, minima aliquam? Iste, illum unde. Animi ab optio laborum qui voluptatum, porro eos, earum nostrum iure velit, dolores voluptatibus voluptatem facere. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem nulla libero consectetur asperiores corporis quidem consequatur, soluta ipsum sit ad, et maxime facere adipisci nisi dolorem deleniti iste veniam odit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum corrupti, accusamus in consequuntur quam nesciunt, sed vel porro beatae, exercitationem veniam error! Autem corrupti ab exercitationem porro dignissimos fugiat?
 
-
-
-
-
-
-
-
-
-
+</p>
 </body>
 
 </html>
