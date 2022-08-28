@@ -30,17 +30,17 @@ padding: 5px;}
     <table>
         <thead>
             <tr>
-                <th scope="rowgroup" rowspan="2">Área</th>
-                <th rowspan="2" > Disciplinas</th>
-                <th colspan="2"> Notas</th>
-                <th rowspan="2"> Média</th>
+                <th  scope="col" rowspan="2">Área</th>
+                <th scope="col" rowspan="2" > Disciplinas</th>
+                <th  scope="colgroup" colspan="2"> Notas</th>
+                <th  scope="col" rowspan="2"> Média</th>
             </tr>
-        <th scope=""> Nota 1</th>
-        <th> Nota 2</th>
+        <th scope="col"> Nota 1</th>
+        <th scope="col"> Nota 2</th>
         </thead>
             <tbody>
             <tr>
-                <th rowspan="4" style="color: black;"> Exatas
+                <th scope="rowgroup" rowspan="4" style="color: black;"> Exatas
                     <td> Matemática</td>
                     <td> 0.0</td>
                     <td> 0.0</td>
@@ -64,11 +64,11 @@ padding: 5px;}
                     <td> 0.0</td>
                     <td> 0.0</td>
             </tr>
-            <tr> <th colspan="4" style="text-align: left"> Média de exatas
-                <th> 0.0</th>
+            <tr> <th scope="row" colspan="4" style="text-align: left"> Média de exatas
+                <td style=" color: white; background-color:rgba(100, 98, 98, 0.699)"> 0.0</td>
             </tr>
             <tr>
-                <th rowspan="2" style="color: black;">  Humanas </th>
+                <th  scope="rowgroup" rowspan="2" style="color: black;">  Humanas </th>
                 <td> História</td>
                 <td> 0.0</td>
                 <td> 0.0</td>
@@ -80,8 +80,8 @@ padding: 5px;}
                     <td> 0.0</td>
                     
             </tr>
-            <tr> <th colspan="4" style="text-align: left"> Média de Humanas
-                <th> 0.0</th>
+            <tr> <th scope="row " colspan="4" style="text-align: left"> Média de Humanas
+                <td style=" color: white; background-color:rgba(100, 98, 98, 0.699)"> 0.0</td>
             </tr>
         </tbody>
 
